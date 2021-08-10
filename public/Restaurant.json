@@ -1,0 +1,37 @@
+﻿[
+  {
+    "id": 1,
+    "restaurant": "Mehhmet Chef",
+    "owner": "ChefAhmed",
+    "ville": " Casablanca",
+    "type": "Tropical"
+  },
+  {
+    "id": 2,
+    "restaurant": "Cabestan",
+    "owner": "Ali Mejdoubi",
+    "ville": " Casablanca",
+    "type": "Medeteranien"
+  },
+  {
+    "id": 3,
+    "restaurant": "Villa Blanca",
+    "owner": "Benjalloun Brahim",
+    "ville": " Casablanca",
+    "type": "Port"
+  },
+  {
+    "id": 4,
+    "restaurant": "Boca-Chica",
+    "owner": "Francois Xavier",
+    "ville": " Casablanca",
+    "type": "Lounge"
+  },
+  {
+    "id": 5,
+    "restaurant": "Gazom",
+    "owner": "GazomChaimaa",
+    "ville": " Casablanca",
+    "type": "Ice Glace"
+  }
+]
