@@ -9,6 +9,6 @@
 <script>
 export default {
   name: "App",
-  props: ["search", "search"],
+  props: ["search"],
 };
 </script>

@@ -48,7 +48,6 @@ export default {
 
   // au moment de la creation du components
   created() {
-    // this fait reference à l'objet ( export default)
     this.getRestaurantData();
   },
 };
