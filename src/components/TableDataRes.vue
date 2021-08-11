@@ -37,10 +37,5 @@
 export default {
   name: "TableDataRes",
   props: ["listRestaurant"],
-  data() {
-    return {
-      isActive: true,
-    };
-  },
 };
 </script>

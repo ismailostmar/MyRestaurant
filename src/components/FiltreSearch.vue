@@ -1,6 +1,6 @@
 <template>
   <div id="appSearch">
-    Chercher par mot Clé :
+    
     <input @keyup.enter="search" v-model="searchWord" />
     <!-- <div v-for="r of resultQuery" :key="r.id">{{ r.title }}</div> -->
   </div>

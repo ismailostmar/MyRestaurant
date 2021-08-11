@@ -42,7 +42,7 @@ export default {
     },
   },
 
-  //fires at the creation of the component
+  // au moment de la creation du componentsl
   created() {
     this.getRestaurantData();
   },

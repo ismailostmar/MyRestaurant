@@ -33,5 +33,12 @@
     "owner": "GazomChaimaa",
     "ville": " Casablanca",
     "type": "Ice Glace"
+  },
+  {
+    "id": 6,
+    "restaurant": "Gazom test",
+    "owner": "ChefAhmed",
+    "ville": " Casablanca",
+    "type": "Tropical"
   }
 ]
