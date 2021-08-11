@@ -1,7 +1,7 @@
 <template>
   <div id="appSearch">
-    
-    <input @keyup.enter="search" v-model="searchWord" />
+    <input @keyup.enter="search" /> <br /><input @keyup.enter="search" />
+
     <!-- <div v-for="r of resultQuery" :key="r.id">{{ r.title }}</div> -->
   </div>
 </template>
@@ -9,26 +9,6 @@
 <script>
 export default {
   name: "App",
-  props: ["search"],
-  data() {
-    return {
-      searchWord: null,
-      //   resources: [],
-    };
-  },
-  computed: {
-    // resultQuery() {
-    //   if (this.searchQuery) {
-    //     return this.resources.filter((item) => {
-    //       return this.searchQuery
-    //         .toLowerCase()
-    //         .split(" ")
-    //         .every((v) => item.title.toLowerCase().includes(v));
-    //     });
-    //   } else {
-    //     return this.resources;
-    //   }
-    // },
-  },
+  props: ["search", "search"],
 };
 </script>

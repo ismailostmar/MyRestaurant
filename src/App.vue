@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
-      <label> Chercher par mot Clé : &nbsp; </label>
-      <input v-model="searchWord" />
+      <label> Chercher par mot Clé : &nbsp; </label> <br />
+      <input v-model="search.owner" /><br />
+      <input v-model="search.restaurant" /><br />
       <TableDataRes :listRestaurant="getListRestaurant" />
     </div>
   </div>
@@ -19,7 +20,10 @@ export default {
 
   data() {
     return {
-      searchWord: "",
+      search: {
+        owner: "",
+        restaurant: "",
+      },
       listRestaurant: [],
     };
   },
@@ -28,7 +32,7 @@ export default {
     //get the list of restaurant filtred by restaurant name
     getListRestaurant() {
       return this.listRestaurant.filter((restaurant) => {
-        return restaurant.restaurant.match(this.searchWord);
+        return restaurant.owner.match(this.search.owner);
       });
     },
   },
@@ -42,8 +46,9 @@ export default {
     },
   },
 
-  // au moment de la creation du componentsl
+  // au moment de la creation du components
   created() {
+    // this fait reference à l'objet ( export default)
     this.getRestaurantData();
   },
 };
