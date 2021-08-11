@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <div class="container">
-      <label> Chercher par mot Clé : &nbsp; </label> <br />
-      <input v-model="search.owner" /><br />
-      <input v-model="search.restaurant" /><br />
+      <label for="owner"> Search :</label> &nbsp;
+      <input id="owner" v-model="search" /><br />
+
+      <!-- <label for="restaurant"> restaurant </label>
+      <input id="restaurant" v-model="search.restaurant" /><br /> -->
       <TableDataRes :listRestaurant="getListRestaurant" />
     </div>
   </div>
@@ -20,10 +22,7 @@ export default {
 
   data() {
     return {
-      search: {
-        owner: "",
-        restaurant: "",
-      },
+      search: "",
       listRestaurant: [],
     };
   },
@@ -32,7 +31,12 @@ export default {
     //get the list of restaurant filtred by restaurant name
     getListRestaurant() {
       return this.listRestaurant.filter((restaurant) => {
-        return restaurant.owner.match(this.search.owner);
+        return (
+          restaurant.owner.match(this.search) ||
+          restaurant.restaurant.match(this.search) ||
+          restaurant.ville.match(this.search) ||
+          restaurant.type.match(this.search)
+        );
       });
     },
   },

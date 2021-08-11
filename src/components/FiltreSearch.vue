@@ -1,8 +1,8 @@
 <template>
   <div id="appSearch">
-    <input @keyup.enter="search" /> <br /><input @keyup.enter="search" />
+    <!-- <input @keyup.enter="search" /> <br /><input @keyup.enter="search" />
 
-    <!-- <div v-for="r of resultQuery" :key="r.id">{{ r.title }}</div> -->
+    <div v-for="r of resultQuery" :key="r.id">{{ r.title }}</div> -->
   </div>
 </template>
 
