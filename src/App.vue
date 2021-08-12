@@ -66,22 +66,19 @@
       <!-- Sidebar  -->
     </div>
     <div class="container">
-      <div class="card">
+      <div class="card tabRes">
         <TableDataRes :listRestaurant="getListRestaurant" />
       </div>
     </div>
-    <MyMaps />
   </div>
 </template>
 
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
-import MyMaps from "./components/MyMaps.vue";
 import axios from "axios";
 export default {
   components: {
     TableDataRes,
-    MyMaps,
   },
 
   data() {
@@ -155,5 +152,10 @@ export default {
   .sidebar a {
     font-size: 18px;
   }
+}
+
+.tabRes {
+  height: 500px;
+  margin-top: 10px;
 }
 </style>
