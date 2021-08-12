@@ -9,39 +9,54 @@
       </b-button>
 
       <!-- Sidebar  -->
-      <b-sidebar id="sidebar-1" title="Restaurant" shadow>
-        <div class="card">
-          <div class="col">
-            <label for="owner" font> Owner :</label>
-            <input
-              id="owner"
-              class="form-control"
-              v-model="search.owner"
-            /><br />
-          </div>
-          <div class="col">
+      <b-sidebar
+        id="sidebar-1"
+        title="Restaurant"
+        bg-variant="dark"
+        text-variant="light"
+        shadow
+      >
+        <div class="container">
+          <div class="card" style="background-color: #212529">
+            <label for="owner"> Owner :</label>
+            <div class="col">
+              <input
+                id="owner"
+                class="form-control bg-dark text-light"
+                placeholder="The Owner ..."
+                v-model="search.owner"
+              /><br />
+            </div>
+
             <label for="restaurant"> Restaurant :</label>
-            <input
-              id="owner"
-              class="form-control"
-              v-model="search.restaurant"
-            /><br />
-          </div>
-          <div class="col">
+            <div class="col">
+              <input
+                id="owner"
+                class="form-control bg-dark text-light"
+                placeholder="The Restaurant ..."
+                v-model="search.restaurant"
+              /><br />
+            </div>
+
             <label for="town"> Ville :</label>
-            <input
-              id="owner"
-              class="form-control"
-              v-model="search.town"
-            /><br />
-          </div>
-          <div class="col">
+            <div class="col">
+              <input
+                id="owner"
+                class="form-control bg-dark text-light"
+                placeholder="The Town ..."
+                v-model="search.town"
+              /><br />
+            </div>
+
             <label for="type"> Type :</label>
-            <input
-              id="owner"
-              class="form-control"
-              v-model="search.type"
-            /><br />
+            <div class="col">
+              <input
+                id="owner"
+                class="form-control bg-dark text-light"
+                placeholder="The Type ..."
+                v-model="search.type"
+              /><br />
+            </div>
           </div>
         </div>
       </b-sidebar>
