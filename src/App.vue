@@ -16,9 +16,11 @@
         text-variant="light"
         shadow
       >
+        <br />
+        <br />
         <div class="container">
           <div class="card" style="background-color: #212529">
-            <label for="owner"> Owner :</label>
+            <label for="owner"> Owner :</label><br />
             <div class="col">
               <input
                 id="owner"
@@ -28,7 +30,7 @@
               /><br />
             </div>
 
-            <label for="restaurant"> Restaurant :</label>
+            <label for="restaurant"> Restaurant :</label><br />
             <div class="col">
               <input
                 id="owner"
@@ -38,17 +40,24 @@
               /><br />
             </div>
 
-            <label for="town"> Ville :</label>
+            <label for="town"> Ville :</label><br />
             <div class="col">
+              <b-form-select
+                :options="listVillesMAR"
+                v-model="search.town"
+                id="town"
+              />
+            </div>
+            <!-- <div class="col">
               <input
                 id="owner"
                 class="form-control bg-dark text-light"
                 placeholder="The Town ..."
                 v-model="search.town"
               /><br />
-            </div>
+            </div> -->
 
-            <label for="type"> Type :</label>
+            <label for="type"> Type :</label><br />
             <div class="col">
               <input
                 id="owner"
@@ -57,6 +66,12 @@
                 v-model="search.type"
               /><br />
             </div>
+
+            <!-- <SelectVilles
+              class="form-control bg-dark text-light"
+              :listVillesMAR="listVillesMAR"
+              v-model="search.town"
+            /> -->
           </div>
         </div>
       </b-sidebar>
@@ -86,6 +101,7 @@ export default {
         type: "",
       },
       listRestaurant: [],
+      listVillesMAR: [],
     };
   },
 
@@ -104,17 +120,37 @@ export default {
   },
 
   methods: {
+    // fetching Data from the Json File
     getRestaurantData() {
       axios
         .get("Restaurant.json")
         .then((response) => (this.listRestaurant = response.data))
         .catch((error) => console.log(error));
     },
+    // Fetching data of All Lists of Morocco Cities
+
+    getListVilles() {
+      axios.get("villesMAR.json").then((response) => {
+        this.listVillesMAR.push({
+          value: "",
+          text: "",
+        });
+        // Map : boucler sur les elements de response
+        response.data.map((res) => {
+          // Push : ajout dans la liste pour respecter la norme de select
+          this.listVillesMAR.push({
+            value: res.ville,
+            text: res.ville,
+          });
+        });
+      });
+    },
   },
 
   // au moment de la creation du components
   created() {
     this.getRestaurantData();
+    this.getListVilles();
   },
 };
 </script>
