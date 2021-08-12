@@ -9,7 +9,7 @@
       <th>#</th>
       <th>Restaurant</th>
       <th>Owner</th>
-      <th>Ville</th>
+      <th>Town</th>
       <th>Type</th>
     </tr>
   </thead>
@@ -21,7 +21,7 @@
       <th scope="row">{{restau.id}}</th>
       <td>{{restau.restaurant}}</td>
       <td>{{restau.owner}}</td>
-      <td>{{restau.ville}}</td>
+      <td>{{restau.town}}</td>
       <td>{{restau.type}}</td>
     </tr>
   </tbody> 

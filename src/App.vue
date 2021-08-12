@@ -10,17 +10,40 @@
 
       <!-- Sidebar  -->
       <b-sidebar id="sidebar-1" title="Restaurant" shadow>
-        <label for="owner" font> Owner :</label>
-        <input id="owner" v-model="search.owner" /><br />
-
-        <label for="owner"> Restaurant :</label>
-        <input id="owner" v-model="search.restaurant" /><br />
-
-        <label for="owner"> Ville : :</label>
-        <input id="owner" v-model="search.ville" /><br />
-
-        <label for="owner"> Type :</label>
-        <input id="owner" v-model="search.type" /><br />
+        <div class="card">
+          <div class="col">
+            <label for="owner" font> Owner :</label>
+            <input
+              id="owner"
+              class="form-control"
+              v-model="search.owner"
+            /><br />
+          </div>
+          <div class="col">
+            <label for="restaurant"> Restaurant :</label>
+            <input
+              id="owner"
+              class="form-control"
+              v-model="search.restaurant"
+            /><br />
+          </div>
+          <div class="col">
+            <label for="town"> Ville :</label>
+            <input
+              id="owner"
+              class="form-control"
+              v-model="search.town"
+            /><br />
+          </div>
+          <div class="col">
+            <label for="type"> Type :</label>
+            <input
+              id="owner"
+              class="form-control"
+              v-model="search.type"
+            /><br />
+          </div>
+        </div>
       </b-sidebar>
       <!-- Sidebar  -->
     </div>
@@ -44,7 +67,7 @@ export default {
       search: {
         owner: "",
         restaurant: "",
-        ville: "",
+        town: "",
         type: "",
       },
       listRestaurant: [],
@@ -58,7 +81,7 @@ export default {
         return (
           restaurant.owner.match(this.search.owner) &&
           restaurant.restaurant.match(this.search.restaurant) &&
-          restaurant.ville.match(this.search.ville) &&
+          restaurant.town.match(this.search.town) &&
           restaurant.type.match(this.search.type)
         );
       });
