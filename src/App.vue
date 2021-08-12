@@ -1,11 +1,30 @@
 <template>
   <div id="app">
-    <div class="container">
-      <label for="owner"> Search :</label> &nbsp;
-      <input id="owner" v-model="search" /><br />
+    <div>
+      <!-- Button toggle  -->
+      <b-button v-b-toggle.sidebar-1>
+        <b-col md="1" class="mb-1">
+          <b-icon icon="three-dots" animation="cylon" font-scale="1"></b-icon>
+        </b-col>
+      </b-button>
 
-      <!-- <label for="restaurant"> restaurant </label>
-      <input id="restaurant" v-model="search.restaurant" /><br /> -->
+      <!-- Sidebar  -->
+      <b-sidebar id="sidebar-1" title="Restaurant" shadow>
+        <label for="owner" font> Owner :</label>
+        <input id="owner" v-model="search.owner" /><br />
+
+        <label for="owner"> Restaurant :</label>
+        <input id="owner" v-model="search.restaurant" /><br />
+
+        <label for="owner"> Ville : :</label>
+        <input id="owner" v-model="search.ville" /><br />
+
+        <label for="owner"> Type :</label>
+        <input id="owner" v-model="search.type" /><br />
+      </b-sidebar>
+      <!-- Sidebar  -->
+    </div>
+    <div class="container">
       <TableDataRes :listRestaurant="getListRestaurant" />
     </div>
   </div>
@@ -22,7 +41,12 @@ export default {
 
   data() {
     return {
-      search: "",
+      search: {
+        owner: "",
+        restaurant: "",
+        ville: "",
+        type: "",
+      },
       listRestaurant: [],
     };
   },
@@ -32,10 +56,10 @@ export default {
     getListRestaurant() {
       return this.listRestaurant.filter((restaurant) => {
         return (
-          restaurant.owner.match(this.search) ||
-          restaurant.restaurant.match(this.search) ||
-          restaurant.ville.match(this.search) ||
-          restaurant.type.match(this.search)
+          restaurant.owner.match(this.search.owner) &&
+          restaurant.restaurant.match(this.search.restaurant) &&
+          restaurant.ville.match(this.search.ville) &&
+          restaurant.type.match(this.search.type)
         );
       });
     },
