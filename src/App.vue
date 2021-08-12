@@ -14,6 +14,8 @@
         title="Restaurant"
         bg-variant="dark"
         text-variant="light"
+        backdrop
+        no-header-close
         shadow
       >
         <br />
@@ -48,14 +50,6 @@
                 id="town"
               />
             </div>
-            <!-- <div class="col">
-              <input
-                id="owner"
-                class="form-control bg-dark text-light"
-                placeholder="The Town ..."
-                v-model="search.town"
-              /><br />
-            </div> -->
 
             <label for="type"> Type :</label><br />
             <div class="col">
@@ -66,30 +60,28 @@
                 v-model="search.type"
               /><br />
             </div>
-
-            <!-- <SelectVilles
-              class="form-control bg-dark text-light"
-              :listVillesMAR="listVillesMAR"
-              v-model="search.town"
-            /> -->
           </div>
         </div>
       </b-sidebar>
       <!-- Sidebar  -->
     </div>
     <div class="container">
-      <TableDataRes :listRestaurant="getListRestaurant" />
+      <div class="card">
+        <TableDataRes :listRestaurant="getListRestaurant" />
+      </div>
     </div>
+    <MyMaps />
   </div>
 </template>
 
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
-
+import MyMaps from "./components/MyMaps.vue";
 import axios from "axios";
 export default {
   components: {
     TableDataRes,
+    MyMaps,
   },
 
   data() {
@@ -154,3 +146,14 @@ export default {
   },
 };
 </script>
+
+<style>
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+</style>
