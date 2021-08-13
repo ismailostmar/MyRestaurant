@@ -35,7 +35,7 @@
             <label for="restaurant"> Restaurant :</label><br />
             <div class="col">
               <input
-                id="owner"
+                id="restaurant"
                 class="form-control bg-dark text-light"
                 placeholder="The Restaurant ..."
                 v-model="search.restaurant"
@@ -54,11 +54,18 @@
             <label for="type"> Type :</label><br />
             <div class="col">
               <input
-                id="owner"
+                id="type"
                 class="form-control bg-dark text-light"
                 placeholder="The Type ..."
                 v-model="search.type"
               /><br />
+            </div>
+            <div class="col">
+              <b-row>
+                <b-col lg="4" class="pb-2">
+                  <b-button variant="success" size="sm">Get Location</b-button>
+                </b-col>
+              </b-row>
             </div>
           </div>
         </div>
