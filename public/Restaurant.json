@@ -1,254 +1,134 @@
 ﻿[
   {
     "id": 1,
-    "restaurant": "Mehhmet Chef",
-    "owner": "ChefAhmed",
+    "restaurant": "Street London",
+    "owner": "Ahmed",
     "town": " Casablanca",
-    "type": "Tropical"
+    "type": "Fast Food",
+    "coordinates": [
+      -7.642847299575806,
+      33.52230960098926
+    ]
   },
   {
     "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
+    "restaurant": "Casablanca Shore",
+    "owner": "Hamza",
     "town": " Casablanca",
-    "type": "Medeteranien"
+    "type": "Café",
+    "coordinates": [
+      -7.6433730125427255,
+      33.521468831024514
+    ]
   },
   {
     "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
+    "restaurant": "Pasta Fresca",
+    "owner": "Omar",
+    "town": " Casablanca",
+    "type": "Lounge",
+    "coordinates": [
+      -7.644542455673218,
+      33.52164771893553
+    ]
   },
   {
     "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
-    "town": " Rabat",
-    "type": "Lounge"
+    "restaurant": "CoqQuletto",
+    "owner": "Aziz",
+    "town": " Casablanca",
+    "type": "ChikenFood",
+    "coordinates": [
+      -7.6455938816070566,
+      33.523552852235376
+    ]
   },
   {
     "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
+    "restaurant": "Valencia",
+    "owner": "Thomas",
     "town": " Casablanca",
-    "type": "Ice Glace"
+    "type": "Glacier",
+    "coordinates": [
+      -7.64871597290039,
+      33.528963917465575
+    ]
   },
   {
     "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
+    "restaurant": "Pizza Hut",
+    "owner": "Dan Carnay",
     "town": " Casablanca",
-    "type": "Medeteranien"
+    "type": "Pizza",
+    "coordinates": [
+      -7.64124870300293,
+      33.54418463518901
+    ]
   },
   {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 7,
+    "restaurant": "Dar Naji",
+    "owner": "El-Naji",
     "town": " Rabat",
-    "type": "Lounge"
+    "type": "Mediterranean",
+    "coordinates": [
+      -6.8460917472839355,
+      34.002207722420195
+    ]
   },
   {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
-    "town": " Casablanca",
-    "type": "Medeteranien"
-  },
-  {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 8,
+    "restaurant": "Yoka Sushi",
+    "owner": "Yoka",
     "town": " Rabat",
-    "type": "Lounge"
+    "type": "Sushi",
+    "coordinates": [
+      -6.849503517150879,
+      34.00060671946742
+    ]
   },
   {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
-    "town": " Casablanca",
-    "type": "Medeteranien"
-  },
-  {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 9,
+    "restaurant": "Chez Ouazzani",
+    "owner": "El-Ouazzani",
     "town": " Rabat",
-    "type": "Lounge"
+    "type": "Snack",
+    "coordinates": [
+      -6.846950054168701,
+      34.00452022896511
+    ]
   },
   {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
-    "town": " Casablanca",
-    "type": "Medeteranien"
-  },
-  {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 10,
+    "restaurant": "Tazaj",
+    "owner": "Abdul Rahman",
     "town": " Rabat",
-    "type": "Lounge"
+    "type": "Restaurants",
+    "coordinates": [
+      -6.8499755859375,
+      33.99525203481272
+    ]
   },
   {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
-    "town": " Casablanca",
-    "type": "Medeteranien"
-  },
-  {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 11,
+    "restaurant": "Gutsie Sapori",
+    "owner": "Sapori",
     "town": " Rabat",
-    "type": "Lounge"
+    "type": "Burger",
+    "coordinates": [
+      -6.8459200859069815,
+      33.999699471065874
+    ]
   },
   {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
-  },
-  {
-    "id": 2,
-    "restaurant": "Cabestan",
-    "owner": "Ali Mejdoubi",
-    "town": " Casablanca",
-    "type": "Medeteranien"
-  },
-  {
-    "id": 3,
-    "restaurant": "Villa Blanca",
-    "owner": "Benjalloun Brahim",
-    "town": " Fes",
-    "type": "Port"
-  },
-  {
-    "id": 4,
-    "restaurant": "Boca-Chica",
-    "owner": "Francois Xavier",
+    "id": 12,
+    "restaurant": "Dominos'z Pizza",
+    "owner": "Tom Monaghan",
     "town": " Rabat",
-    "type": "Lounge"
-  },
-  {
-    "id": 5,
-    "restaurant": "Gazom",
-    "owner": "GazomChaimaa",
-    "town": " Casablanca",
-    "type": "Ice Glace"
-  },
-  {
-    "id": 6,
-    "restaurant": "Gazom test",
-    "owner": "ChefAhmed",
-    "town": " Tanger",
-    "type": "Tropical"
+    "type": "Fast Restaurant",
+    "coordinates": [
+      -6.8509626388549805,
+      33.989256522288684
+    ]
   }
 ]

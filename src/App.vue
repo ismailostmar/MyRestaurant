@@ -153,7 +153,6 @@ export default {
     font-size: 18px;
   }
 }
-
 .tabRes {
   height: 500px;
   margin-top: 10px;

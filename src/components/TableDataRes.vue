@@ -8,9 +8,9 @@
     <tr>
       <th>#</th>
       <th>Restaurant</th>
-      <th>Owner</th>
       <th>Town</th>
       <th>Type</th>
+      <th>Owner</th>
     </tr>
   </thead>
   <!--Table head-->
@@ -20,9 +20,9 @@
     <tr>
       <th scope="row">{{restau.id}}</th>
       <td>{{restau.restaurant}}</td>
-      <td>{{restau.owner}}</td>
       <td>{{restau.town}}</td>
       <td>{{restau.type}}</td>
+      <td>{{restau.owner}}</td>     
     </tr>
   </tbody> 
   <!--Table body-->
