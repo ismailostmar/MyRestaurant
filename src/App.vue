@@ -2,7 +2,7 @@
   <div id="app">
     <div>
       <!-- Button toggle  -->
-      <b-button v-b-toggle.sidebar-1>
+      <b-button v-b-toggle.sidebar-1 variant="light">
         <b-col md="1" class="mb-1">
           <b-icon icon="three-dots" animation="cylon" font-scale="1"></b-icon>
         </b-col>
@@ -73,6 +73,10 @@
       <!-- Sidebar  -->
     </div>
     <div class="container">
+      <div class="card">
+        <LocationSelectorMap />
+        <!-- <Maps /> -->
+      </div>
       <div class="card tabRes">
         <TableDataRes :listRestaurant="getListRestaurant" />
       </div>
@@ -82,10 +86,14 @@
 
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
+//import Maps from "./components/Maps.vue";
+import LocationSelectorMap from "./components/LocationSelectorMap.vue";
 import axios from "axios";
 export default {
   components: {
     TableDataRes,
+    LocationSelectorMap,
+    //Maps,
   },
 
   data() {
@@ -163,5 +171,10 @@ export default {
 .tabRes {
   height: 500px;
   margin-top: 10px;
+}
+
+b-button {
+  color: #342b2b;
+  border-color: white;
 }
 </style>

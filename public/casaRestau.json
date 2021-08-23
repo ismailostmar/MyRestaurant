@@ -1,0 +1,75 @@
+{
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Street London",
+                "description": "Café Restaurant, Bd 60 Casablanca Sidi Maarouf "
+            },
+            "geometry": {
+                "coordinates": [
+                    33.522412229485816,
+                    -7.642792924510021
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Casablanca Shore",
+                "description": "Lotissement Soufiane , Lot. N :135 Sidi Maarouf, Casablanca 20100"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.5214711485177,
+                    -7.643321386218545
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Pasta Fresca",
+                "description": "Pates fraiches , bar salades :G9C4+M5M, Casablanca"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.52176512896303,
+                    -7.64458399340882
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "CoqQuletto",
+                "description": "Restaurant Fast Restaurant G9F3+CQP, Casablanca"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.52363224690006,
+                    -7.645501308795429
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "BOCA Food",
+                "description": " Boca Food Casanearshore"
+            },
+            "geometry": {
+                "coordinates": [
+                    33.52649174074787,
+                    -7.641602960168708
+                ],
+                "type": "Point"
+            }
+        }
+    ],
+    "type": "FeatureCollection"
+}

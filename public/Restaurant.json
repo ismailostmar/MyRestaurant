@@ -39,19 +39,19 @@
     "town": " Casablanca",
     "type": "ChikenFood",
     "coordinates": [
-      -7.6455938816070566,
-      33.523552852235376
+      33.52363224690006,
+      -7.645501308795429
     ]
   },
   {
     "id": 5,
-    "restaurant": "Valencia",
-    "owner": "Thomas",
+    "restaurant": "Boca Food",
+    "owner": "Bo-Ca",
     "town": " Casablanca",
-    "type": "Glacier",
+    "type": "Restaurant",
     "coordinates": [
-      -7.64871597290039,
-      33.528963917465575
+      33.52649174074787,
+      -7.641602960168708
     ]
   },
   {
