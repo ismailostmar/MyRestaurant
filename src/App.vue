@@ -7,7 +7,14 @@
           <b-icon icon="three-dots" animation="cylon" font-scale="1"></b-icon>
         </b-col>
       </b-button>
-
+      <div class="container">
+        <input
+          id="pac-input"
+          class="form-control form-control-sm w-75 mb-3 ml-0 mt-0"
+          type="text"
+          placeholder="Search Box"
+        />
+      </div>
       <!-- Sidebar  -->
       <b-sidebar
         id="sidebar-1"
@@ -17,6 +24,7 @@
         backdrop
         no-header-close
         shadow
+        width="300px"
       >
         <br />
         <br />
@@ -45,6 +53,7 @@
             <label for="town"> Ville :</label><br />
             <div class="col">
               <b-form-select
+                class="forSelect"
                 :options="listVillesMAR"
                 v-model="search.town"
                 id="town"
@@ -63,7 +72,9 @@
             <div class="col">
               <b-row>
                 <b-col lg="4" class="pb-2">
-                  <b-button variant="success" size="sm">Get Location</b-button>
+                  <b-button class="forSelect" variant="success" size="sm"
+                    >Get Location</b-button
+                  >
                 </b-col>
               </b-row>
             </div>
@@ -74,8 +85,8 @@
     </div>
     <div class="container">
       <div class="card">
-        <LocationSelectorMap />
-        <!-- <Maps /> -->
+        <!-- <LocationSelectorMap /> -->
+        <Maps />
       </div>
       <div class="card tabRes">
         <TableDataRes :listRestaurant="getListRestaurant" />
@@ -86,14 +97,14 @@
 
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
-//import Maps from "./components/Maps.vue";
-import LocationSelectorMap from "./components/LocationSelectorMap.vue";
+import Maps from "./components/Maps.vue";
+// import LocationSelectorMap from "./components/LocationSelectorMap.vue";
 import axios from "axios";
 export default {
   components: {
     TableDataRes,
-    LocationSelectorMap,
-    //Maps,
+    // LocationSelectorMap,
+    Maps,
   },
 
   data() {
@@ -176,5 +187,9 @@ export default {
 b-button {
   color: #342b2b;
   border-color: white;
+}
+
+.forSelect {
+  width: 270px;
 }
 </style>
