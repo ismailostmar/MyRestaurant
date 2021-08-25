@@ -30,7 +30,7 @@
         <br />
         <div class="container">
           <div class="card" style="background-color: #212529">
-            <label for="owner"> Owner :</label><br />
+            <!-- <label for="owner"> Owner :</label><br />
             <div class="col">
               <input
                 id="owner"
@@ -38,7 +38,7 @@
                 placeholder="The Owner ..."
                 v-model="search.owner"
               /><br />
-            </div>
+            </div> -->
 
             <label for="restaurant"> Restaurant :</label><br />
             <div class="col">
