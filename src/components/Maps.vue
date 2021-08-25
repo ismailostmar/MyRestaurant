@@ -1,12 +1,24 @@
 <template>
   <div id="map">
-    <button @click="drawMarker">Draw Marker</button>
-    <button @click="clearMap">clear Map</button>
+    <div class="col">
+      <b-row class="m-2">
+        <b-col lg="4" class="pb-2">
+          <b-button variant="primary" size="sm" @click="drawMarker"
+            >Get Location</b-button
+          >
+        </b-col>
+        <b-col lg="4" class="pb-2">
+          <b-button variant="warning" size="sm" @click="clearMap"
+            >Refresh</b-button
+          >
+        </b-col>
+      </b-row>
+    </div>
     <GmapMap
       :center="center"
       :zoom="7"
       map-type-id="terrain"
-      style="width: 1300px; height: 400px; solid: 2px black"
+      style="width: 1200px; height: 400px"
     >
       <GmapMarker
         :key="index"

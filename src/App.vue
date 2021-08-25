@@ -7,14 +7,18 @@
           <b-icon icon="three-dots" animation="cylon" font-scale="1"></b-icon>
         </b-col>
       </b-button>
+
       <div class="container">
+        <!-- <span class="fa fa-search"></span> -->
         <input
           id="pac-input"
-          class="form-control form-control-sm w-75 mb-3 ml-0 mt-0"
+          class="form-control form-control-sm w-75 mb-3"
           type="text"
-          placeholder="Search Box"
+          placeholder="Look for Restaurant ... "
+          v-model="search.restaurant"
         />
       </div>
+
       <!-- Sidebar  -->
       <b-sidebar
         id="sidebar-1"
@@ -40,7 +44,7 @@
               /><br />
             </div> -->
 
-            <label for="restaurant"> Restaurant :</label><br />
+            <!-- <label for="restaurant"> Restaurant :</label><br />
             <div class="col">
               <input
                 id="restaurant"
@@ -48,19 +52,20 @@
                 placeholder="The Restaurant ..."
                 v-model="search.restaurant"
               /><br />
-            </div>
-
-            <label for="town"> Ville :</label><br />
+            </div> -->
+            <br />
+            <label for="town" class="m-1"> Town :</label><br />
             <div class="col">
               <b-form-select
-                class="forSelect"
+                bg-color="dark"
+                class="forSelect p-1"
                 :options="listVillesMAR"
                 v-model="search.town"
                 id="town"
               />
             </div>
-
-            <label for="type"> Type :</label><br />
+            <br />
+            <label for="type" class="m-1"> Type :</label><br />
             <div class="col">
               <input
                 id="type"
@@ -83,10 +88,16 @@
       </b-sidebar>
       <!-- Sidebar  -->
     </div>
+
     <div class="container">
-      <div class="card">
-        <!-- <LocationSelectorMap /> -->
-        <Maps />
+      <div class="row">
+        <div class="column mb-4 px-2">
+          <div class="card indigo text-center z-depth-2">
+            <div class="card-body">
+              <Maps />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card tabRes">
         <TableDataRes :listRestaurant="getListRestaurant" />
@@ -98,12 +109,10 @@
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
 import Maps from "./components/Maps.vue";
-// import LocationSelectorMap from "./components/LocationSelectorMap.vue";
 import axios from "axios";
 export default {
   components: {
     TableDataRes,
-    // LocationSelectorMap,
     Maps,
   },
 
