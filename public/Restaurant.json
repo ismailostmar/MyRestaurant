@@ -4,131 +4,83 @@
     "restaurant": "Street London",
     "owner": "Ahmed",
     "town": " Casablanca",
-    "type": "Fast Food",
-    "coordinates": [
-      -7.642847299575806,
-      33.52230960098926
-    ]
+    "type": "Fast Food"
   },
   {
     "id": 2,
     "restaurant": "Casablanca Shore",
     "owner": "Hamza",
     "town": " Casablanca",
-    "type": "Café",
-    "coordinates": [
-      -7.6433730125427255,
-      33.521468831024514
-    ]
+    "type": "Café"
   },
   {
     "id": 3,
     "restaurant": "Pasta Fresca",
     "owner": "Omar",
     "town": " Casablanca",
-    "type": "Lounge",
-    "coordinates": [
-      -7.644542455673218,
-      33.52164771893553
-    ]
+    "type": "Lounge"
   },
   {
     "id": 4,
     "restaurant": "CoqQuletto",
     "owner": "Aziz",
     "town": " Casablanca",
-    "type": "ChikenFood",
-    "coordinates": [
-      33.52363224690006,
-      -7.645501308795429
-    ]
+    "type": "ChikenFood"
   },
   {
     "id": 5,
     "restaurant": "Boca Food Restaurants",
     "owner": "Bo-Ca",
     "town": " Casablanca",
-    "type": "Restaurant",
-    "coordinates": [
-      33.52649174074787,
-      -7.641602960168708
-    ]
+    "type": "Restaurant"
   },
   {
     "id": 6,
     "restaurant": "Pizza Hut",
     "owner": "Dan Carnay",
     "town": " Casablanca",
-    "type": "Pizza",
-    "coordinates": [
-      -7.64124870300293,
-      33.54418463518901
-    ]
+    "type": "Pizza"
   },
   {
     "id": 7,
     "restaurant": "Dar Naji",
     "owner": "El-Naji",
     "town": " Rabat",
-    "type": "Mediterranean",
-    "coordinates": [
-      -6.8460917472839355,
-      34.002207722420195
-    ]
+    "type": "Mediterranean"
   },
   {
     "id": 8,
     "restaurant": "Yoka Sushi",
     "owner": "Yoka",
     "town": " Rabat",
-    "type": "Sushi",
-    "coordinates": [
-      -6.849503517150879,
-      34.00060671946742
-    ]
+    "type": "Sushi"
   },
   {
     "id": 9,
     "restaurant": "Chez Ouazzani",
     "owner": "El-Ouazzani",
     "town": " Rabat",
-    "type": "Snack",
-    "coordinates": [
-      -6.846950054168701,
-      34.00452022896511
-    ]
+    "type": "Snack"
   },
   {
     "id": 10,
     "restaurant": "Tazaj",
     "owner": "Abdul Rahman",
     "town": " Rabat",
-    "type": "Restaurants",
-    "coordinates": [
-      -6.8499755859375,
-      33.99525203481272
-    ]
+    "type": "Restaurants"
   },
   {
     "id": 11,
     "restaurant": "Pizza des Gourmets",
     "owner": "Michelle",
     "town": " Rabat",
-    "type": "Pizza",
-    "coordinates": [
-      -6.8459200859069815,
-      33.999699471065874
-    ]
+    "type": "Pizza"
   },
   {
     "id": 12,
     "restaurant": "Dominos'z Pizza",
     "owner": "Tom Monaghan",
     "town": " Rabat",
-    "type": "Fast Restaurant",
-    "coordinates": [
-      -6.8509626388549805,
-      33.989256522288684
-    ]
+    "type": "Fast Restaurant"
   }
 ]
