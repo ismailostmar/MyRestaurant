@@ -12,7 +12,7 @@
         <!-- <span class="fa fa-search"></span> -->
         <input
           id="pac-input"
-          class="form-control form-control-sm w-75 mb-3"
+          class="form-control bg-dark text-light form-control-sm w-75 mb-3"
           type="text"
           placeholder="Look for Restaurant ... "
           v-model="search.restaurant"
@@ -74,7 +74,7 @@
                 v-model="search.type"
               /><br />
             </div>
-            <div class="col">
+            <!-- <div class="col">
               <b-row>
                 <b-col lg="4" class="pb-2">
                   <b-button class="forSelect" variant="success" size="sm"
@@ -82,7 +82,7 @@
                   >
                 </b-col>
               </b-row>
-            </div>
+            </div> -->
           </div>
         </div>
       </b-sidebar>
@@ -92,7 +92,10 @@
     <div class="container">
       <div class="row">
         <div class="column mb-1 px-2">
-          <div class="card indigo text-center z-depth-2">
+          <div
+            class="card indigo text-center z-depth-2"
+            style="background-color: #212529"
+          >
             <div class="card-body">
               <Maps />
             </div>

@@ -3,12 +3,12 @@
     <div class="col">
       <b-row class="m-2">
         <b-col lg="4" class="pb-2">
-          <b-button variant="primary" size="sm" @click="drawMarker"
+          <b-button variant="outline-primary" @click="drawMarker"
             >Get Location</b-button
           >
         </b-col>
         <b-col lg="4" class="pb-2">
-          <b-button variant="warning" size="sm" @click="clearMap"
+          <b-button variant="outline-warning" @click="clearMap"
             >Refresh</b-button
           >
         </b-col>
@@ -19,8 +19,17 @@
         :center="center"
         :zoom="7"
         map-type-id="terrain"
-        style="width: 1260px; height: 400px"
+        style="width: 1270px; height: 400px"
         frameborder="0"
+        :options="{
+          zoomControl: true,
+          mapTypeControl: true,
+          scaleControl: true,
+          streetViewControl: true,
+          rotateControl: true,
+          fullscreenControl: true,
+          disableDefaultUi: true,
+        }"
       >
         <GmapMarker
           :key="index"
@@ -36,31 +45,19 @@
 </template>
 
 <script>
-const streetLondon = { lat: 33.52238, lng: -7.64298 };
-const casablancaShore = { lat: 33.52144, lng: -7.64324 };
-const x = { lat: 37.37062, lng: -5.98817 };
+import tab from "../../public/coordinates.js";
 
 export default {
   name: "Maps",
   data() {
     return {
       markers: [],
-      center: casablancaShore,
+      center: { lat: 33.52238, lng: -7.64298 },
     };
   },
   methods: {
     drawMarker() {
-      this.markers = [
-        {
-          position: streetLondon,
-        },
-        {
-          position: casablancaShore,
-        },
-        {
-          position: x,
-        },
-      ];
+      this.markers = tab;
     },
     clearMap() {
       this.markers = [];
