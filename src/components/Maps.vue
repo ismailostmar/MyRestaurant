@@ -14,21 +14,24 @@
         </b-col>
       </b-row>
     </div>
-    <GmapMap
-      :center="center"
-      :zoom="7"
-      map-type-id="terrain"
-      style="width: 1200px; height: 400px"
-    >
-      <GmapMarker
-        :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
-        :clickable="true"
-        :draggable="true"
-        @click="center = m.position"
-      />
-    </GmapMap>
+    <div class="map-responsive">
+      <GmapMap
+        :center="center"
+        :zoom="7"
+        map-type-id="terrain"
+        style="width: 1260px; height: 400px"
+        frameborder="0"
+      >
+        <GmapMarker
+          :key="index"
+          v-for="(m, index) in markers"
+          :position="m.position"
+          :clickable="true"
+          :draggable="true"
+          @click="center = m.position"
+        />
+      </GmapMap>
+    </div>
   </div>
 </template>
 
@@ -137,5 +140,16 @@ export default {
 
 #target {
   width: 345px;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 10%;
+  position: relative;
+  height: 400px;
+}
+.map-responsive GmapMap {
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 </style>

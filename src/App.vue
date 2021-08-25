@@ -91,7 +91,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="column mb-4 px-2">
+        <div class="column mb-1 px-2">
           <div class="card indigo text-center z-depth-2">
             <div class="card-body">
               <Maps />
