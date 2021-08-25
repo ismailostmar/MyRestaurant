@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "restaurant": "Boca Food",
+    "restaurant": "Boca Food Restaurants",
     "owner": "Bo-Ca",
     "town": " Casablanca",
     "type": "Restaurant",
@@ -111,10 +111,10 @@
   },
   {
     "id": 11,
-    "restaurant": "Gutsie Sapori",
-    "owner": "Sapori",
+    "restaurant": "Pizza des Gourmets",
+    "owner": "Michelle",
     "town": " Rabat",
-    "type": "Burger",
+    "type": "Pizza",
     "coordinates": [
       -6.8459200859069815,
       33.999699471065874
