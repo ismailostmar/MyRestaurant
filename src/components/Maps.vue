@@ -1,7 +1,7 @@
 <template>
   <div id="map">
-    <input type="text" ref="input" />
-    <button @click="submit">Add 1 to counter</button>
+    <!-- <input type="text" ref="input" />
+    <button @click="submit">Add 1 to counter</button> -->
 
     <b-modal ref="my-modal" hide-footer title="Restaurant details">
       <div class="d-block text-center">
@@ -77,9 +77,9 @@ export default {
     this.geolocate();
   },
   methods: {
-    submit() {
-      this.showModal();
-    },
+    // submit() {
+    //   this.showModal();
+    // },
     // The Navigator Ask me to get my current Position
     geolocate: function () {
       navigator.geolocation.getCurrentPosition((position) => {

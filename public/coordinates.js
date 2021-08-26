@@ -23,7 +23,7 @@ const tab = [{
     },
 
     {
-        name: " Coqueletto ",
+        name: "Coqueletto",
         position: {
             lat: 33.52359,
             lng: -7.64552
@@ -47,10 +47,10 @@ const tab = [{
     },
 
     {
-        name: "Yoka sushi",
+        name: "Yoka Sushi",
         position: {
-            lat: 33.95729,
-            lng: -6.87261
+            lat: 33.95727,
+            lng: -6.87280
         }
     },
 
@@ -63,9 +63,9 @@ const tab = [{
     },
 
     {
-        name: " Pizza des Gourmets",
+        name: "Pizza des Gourmets",
         position: {
-            lat: 34.00048,
+            lat: 34.00049,
             lng: -6.84629
         }
     },
