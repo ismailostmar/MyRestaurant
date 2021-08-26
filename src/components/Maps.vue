@@ -97,8 +97,8 @@ export default {
     },
     getCenter(position) {
       this.center = position;
-      console.log("clicked !");
-      console.log(position);
+      // console.log("clicked !");
+      // console.log(position);
       this.searchByCordinate(position);
       this.searchByName(this.searchedRestaurant.name);
       this.showModal();
@@ -120,11 +120,11 @@ export default {
     },
 
     searchByName(name) {
-      console.log(name);
+      // console.log(name);
       this.searchedRestaurant = Restaurants.find(
         (resto) => resto.restaurant === name
       );
-      alert(this.searchedRestaurant);
+      // alert(this.searchedRestaurant);
     },
   },
 };
