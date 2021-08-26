@@ -1,5 +1,18 @@
 <template>
   <div id="map">
+    <input type="text" ref="input" />
+    <button @click="submit">Add 1 to counter</button>
+
+    <b-modal ref="my-modal" hide-footer title="Restaurant details">
+      <div class="d-block text-center">
+        <h3>Information about the clicked Restaurant!</h3>
+        <p>Restaurant : {{ this.searchedRestaurant.restaurant }}.</p>
+        <p>Owner : {{ this.searchedRestaurant.owner }}.</p>
+        <p>Town : {{ this.searchedRestaurant.town }}.</p>
+        <p>Type : {{ this.searchedRestaurant.type }}.</p>
+      </div>
+    </b-modal>
+
     <div class="col">
       <b-row class="m-2">
         <b-col lg="4" class="pb-2">
@@ -26,6 +39,7 @@
           mapTypeControl: true,
           scaleControl: true,
           streetViewControl: true,
+          scrollwheel: true,
           rotateControl: true,
           fullscreenControl: true,
           disableDefaultUi: true,
@@ -36,8 +50,8 @@
           v-for="(m, index) in markers"
           :position="m.position"
           :clickable="true"
-          :draggable="true"
-          @click="center = m.position"
+          :draggable="false"
+          @click="getCenter(m.position)"
         />
       </GmapMap>
     </div>
@@ -46,21 +60,71 @@
 
 <script>
 import tab from "../../public/coordinates.js";
+import Restaurants from "../../public/Restaurant.json";
 
 export default {
   name: "Maps",
   data() {
     return {
+      //counter: 0,
       markers: [],
-      center: { lat: 33.52238, lng: -7.64298 },
+      center: { lat: 45.508, lng: -73.587 },
+      searchedRestaurant: {},
     };
   },
+
+  mounted() {
+    this.geolocate();
+  },
   methods: {
+    submit() {
+      this.showModal();
+    },
+    // The Navigator Ask me to get my current Position
+    geolocate: function () {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.center = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+      });
+    },
     drawMarker() {
       this.markers = tab;
     },
     clearMap() {
       this.markers = [];
+    },
+    getCenter(position) {
+      this.center = position;
+      console.log("clicked !");
+      console.log(position);
+      this.searchByCordinate(position);
+      this.searchByName(this.searchedRestaurant.name);
+      this.showModal();
+    },
+
+    showModal() {
+      this.$refs["my-modal"].show();
+    },
+    hideModal() {
+      this.$refs["my-modal"].hide();
+    },
+
+    searchByCordinate(position) {
+      this.searchedRestaurant = tab.find(
+        (restaurant) =>
+          restaurant.position.lat === position.lat &&
+          restaurant.position.lng === position.lng
+      );
+    },
+
+    searchByName(name) {
+      console.log(name);
+      this.searchedRestaurant = Restaurants.find(
+        (resto) => resto.restaurant === name
+      );
+      alert(this.searchedRestaurant);
     },
   },
 };

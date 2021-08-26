@@ -1,7 +1,7 @@
 ﻿[
   {
     "id": 1,
-    "restaurant": "Street London",
+    "restaurant": "Shore Street London",
     "owner": "Ahmed",
     "town": " Casablanca",
     "type": "Fast Food"
@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-    "restaurant": "CoqQuletto",
+    "restaurant": "Coqueletto",
     "owner": "Aziz",
     "town": " Casablanca",
     "type": "ChikenFood"
@@ -78,9 +78,93 @@
   },
   {
     "id": 12,
-    "restaurant": "Dominos'z Pizza",
-    "owner": "Tom Monaghan",
-    "town": " Rabat",
-    "type": "Fast Restaurant"
+    "restaurant": "Ligui Sidi Maarouf",
+    "owner": "Ligui",
+    "town": " Casablanca",
+    "type": "Italien"
+  },
+  {
+    "id": 13,
+    "restaurant": "Pasta d'Oro",
+    "owner": "Inconnu",
+    "town": " Casablanca",
+    "type": "Italien"
+  },
+  {
+    "id": 15,
+    "restaurant": "Olea",
+    "owner": "Olea",
+    "town": " Casablanca",
+    "type": "Italien"
+  },
+  {
+    "id": 16,
+    "restaurant": "Ipopito",
+    "owner": "Ipopito",
+    "town": " Casablanca",
+    "type": "Tacos"
+  },
+  {
+    "id": 17,
+    "restaurant": "Machaway Restaurant",
+    "owner": "Ben-Saoud",
+    "town": " Casablanca",
+    "type": "Grillardière"
+  },
+  {
+    "id": 18,
+    "restaurant": "Ô Machwi",
+    "owner": "Khalifa",
+    "town": " Casablanca",
+    "type": "Grillade Poisson"
+  },
+  {
+    "id": 19,
+    "restaurant": "One Way Steakhouse",
+    "owner": "Rachid & Ali",
+    "town": " Casablanca",
+    "type": "Viande/Steak"
+  },
+  {
+    "id": 20,
+    "restaurant": "Chicken Light",
+    "owner": "Ismail",
+    "town": " Casablanca",
+    "type": "Chiken"
+  },
+  {
+    "id": 21,
+    "restaurant": "La Grillardière Sidi Maarouf",
+    "owner": "#########",
+    "town": " Casablanca",
+    "type": "Grillade"
+  },
+  {
+    "id": 22,
+    "restaurant": "Khalifa fresh fishe",
+    "owner": "Khalifa",
+    "town": " Casablanca",
+    "type": "Grillade Poisson"
+  },
+  {
+    "id": 23,
+    "restaurant": "Pizza Corner",
+    "owner": "#########",
+    "town": " Casablanca",
+    "type": "Pizzeria"
+  },
+  {
+    "id": 24,
+    "restaurant": "Le Miam's",
+    "owner": "Miams",
+    "town": " Casablanca",
+    "type": "Fast Food"
+  },
+  {
+    "id": 25,
+    "restaurant": "Brother's food",
+    "owner": "Akhawayn",
+    "town": " Casablanca",
+    "type": "Small Restaurant"
   }
 ]
