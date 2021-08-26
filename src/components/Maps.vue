@@ -6,10 +6,19 @@
     <b-modal ref="my-modal" hide-footer title="Restaurant details">
       <div class="d-block text-center">
         <h3>Information about the clicked Restaurant!</h3>
-        <p>Restaurant : {{ this.searchedRestaurant.restaurant }}.</p>
-        <p>Owner : {{ this.searchedRestaurant.owner }}.</p>
-        <p>Town : {{ this.searchedRestaurant.town }}.</p>
-        <p>Type : {{ this.searchedRestaurant.type }}.</p>
+        <table>
+          <th>Restaurant :</th>
+          <td>{{ this.searchedRestaurant.restaurant }}".</td>
+
+          <th>Owner :</th>
+          <td>{{ this.searchedRestaurant.owner }}</td>
+
+          <th>Town :</th>
+          <td>{{ this.searchedRestaurant.town }}</td>
+
+          <th>Type :</th>
+          <td>{{ this.searchedRestaurant.type }}</td>
+        </table>
       </div>
     </b-modal>
 
