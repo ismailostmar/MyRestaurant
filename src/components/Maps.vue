@@ -1,37 +1,36 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" hide-footer title="Restaurant details">
-      <div class="d-block text-center">
-        <h3>Information about the clicked Restaurant!</h3>
-        <table>
-          <th>Restaurant :</th>
-          <td>{{ this.searchedRestaurant.restaurant }}".</td>
+    <b-modal ref="my-modal" centred title="Restaurant details">
+      <h3>Information about the clicked Restaurant!</h3>
+      <b-container fluid>
+        <b-col cols="7">
+          Restaurant : {{ this.searchedRestaurant.restaurant }}</b-col
+        >
+        <b-col cols="7">
+          Owner :
+          {{ this.searchedRestaurant.owner }}
+        </b-col>
+        <b-col cols="7">
+          Town :
+          {{ this.searchedRestaurant.town }}
+        </b-col>
 
-          <th>Owner :</th>
-          <td>{{ this.searchedRestaurant.owner }}</td>
-
-          <th>Town :</th>
-          <td>{{ this.searchedRestaurant.town }}</td>
-
-          <th>Type :</th>
-          <td>{{ this.searchedRestaurant.type }}</td>
-        </table>
-      </div>
+        <b-col cols="7">
+          Type :
+          {{ this.searchedRestaurant.type }}
+        </b-col>
+      </b-container>
     </b-modal>
-    <div class="col">
+
+    <!-- <div class="col">
       <b-row class="m-2">
         <b-col lg="4" class="pb-2">
           <b-button variant="outline-primary" @click="drawMarker"
             >Get Location</b-button
           >
         </b-col>
-        <b-col lg="4" class="pb-2">
-          <b-button variant="outline-warning" @click="clearMap"
-            >Refresh</b-button
-          >
-        </b-col>
       </b-row>
-    </div>
+    </div> -->
     <div class="map-responsive">
       <GmapMap
         :center="center"
@@ -94,9 +93,6 @@ export default {
     },
     drawMarker() {
       this.markers = tab;
-    },
-    clearMap() {
-      this.markers = [];
     },
     getCenter(position) {
       this.center = position;

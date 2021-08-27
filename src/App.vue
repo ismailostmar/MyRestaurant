@@ -2,60 +2,58 @@
   <div id="app">
     <div>
       <!-- Button toggle  -->
-      <b-button v-b-toggle.sidebar-1 variant="light">
+      <!-- <b-button v-b-toggle.sidebar-1 variant="light">
         <b-col md="1" class="mb-1">
-          <b-icon icon="three-dots" animation="cylon" font-scale="1"></b-icon>
+          <b-icon icon="filter-left" animation="cylon" font-scale="1"></b-icon>
         </b-col>
-      </b-button>
+      </b-button>-->
 
-      <div class="container"></div>
-
-      <!-- Sidebar  -->
-      <b-sidebar
-        id="sidebar-1"
-        title="Restaurant"
-        bg-variant="dark"
-        text-variant="light"
-        backdrop
-        no-header-close
-        shadow
-        width="300px"
-      >
-        <br />
-        <br />
-        <div class="container">
-          <div class="card" style="background-color: #212529">
-            <label for="restaurant"> Restaurant :</label><br />
-            <div class="col">
-              <input
-                id="restaurant"
-                class="form-control bg-dark text-light"
-                placeholder="The Restaurant ..."
-                v-model="search.restaurant"
-              /><br />
-            </div>
-            <br />
-            <label for="town" class="m-1"> Town :</label><br />
-            <div class="col">
-              <b-form-select
-                bg-color="dark"
-                class="forSelect p-1"
-                :options="listVillesMAR"
-                v-model="search.town"
-                id="town"
-              />
-            </div>
-            <br />
-            <label for="type" class="m-1"> Type :</label><br />
-            <div class="col">
-              <input
-                id="type"
-                class="form-control bg-dark text-light"
-                placeholder="The Type ..."
-                v-model="search.type"
-              /><br />
-            </div>
-            <!-- <div class="col">
+      <div class="container">
+        <!-- Sidebar  -->
+        <b-sidebar
+          id="sidebar-1"
+          title="Restaurant"
+          bg-variant="light"
+          text-variant="black"
+          no-header-close
+          shadow
+          width="300px"
+          visible="true"
+        >
+          <br />
+          <br />
+          <div class="container">
+            <div style="background-color: white">
+              <label for="restaurant"> Restaurant :</label><br />
+              <div class="col">
+                <input
+                  id="restaurant"
+                  class="form-control bg-light text-black"
+                  placeholder="The Restaurant ..."
+                  v-model="search.restaurant"
+                /><br />
+              </div>
+              <br />
+              <label for="town" class="m-1"> Town :</label><br />
+              <div class="col">
+                <b-form-select
+                  class="forSelect p-1 m-1"
+                  :options="listVillesMAR"
+                  v-model="search.town"
+                  id="town"
+                />
+              </div>
+              <br />
+              <label for="type" class="m-1"> Type :</label><br />
+              <div class="col">
+                <input
+                  id="type"
+                  class="form-control bg-light text-black"
+                  placeholder="The Type ..."
+                  v-model="search.type"
+                /><br />
+              </div>
+              <!-- <div class="col">
               <b-row>
                 <b-col lg="4" class="pb-2">
                   <b-button class="forSelect" variant="success" size="sm"
@@ -64,9 +62,10 @@
                 </b-col>
               </b-row>
             </div> -->
+            </div>
           </div>
-        </div>
-      </b-sidebar>
+        </b-sidebar>
+      </div>
       <!-- Sidebar  -->
     </div>
 
@@ -90,6 +89,7 @@
 <script>
 import TableDataRes from "./components/TableDataRes.vue";
 import Maps from "./components/Maps.vue";
+
 import axios from "axios";
 export default {
   components: {
