@@ -2,11 +2,11 @@
   <div id="app">
     <div>
       <!-- Button toggle  -->
-      <!-- <b-button v-b-toggle.sidebar-1 variant="light">
+      <b-button v-b-toggle.sidebar-1 variant="light">
         <b-col md="1" class="mb-1">
           <b-icon icon="filter-left" animation="cylon" font-scale="1"></b-icon>
         </b-col>
-      </b-button>-->
+      </b-button>
 
       <div class="container">
         <!-- Sidebar  -->
@@ -18,7 +18,10 @@
           no-header-close
           shadow
           width="300px"
-          visible="true"
+          backdrop
+          :mobile="mobile"
+          :reduce="reduce"
+          :delay="expandWithDelay ? 500 : null"
         >
           <br />
           <br />
@@ -107,6 +110,9 @@ export default {
       },
       listRestaurant: [],
       listVillesMAR: [],
+      mobile: "hide",
+      reduce: false,
+      expandWithDelay: true,
     };
   },
 
