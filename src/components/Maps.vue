@@ -1,8 +1,5 @@
 <template>
   <div id="map">
-    <!-- <input type="text" ref="input" />
-    <button @click="submit">Add 1 to counter</button> -->
-
     <b-modal ref="my-modal" hide-footer title="Restaurant details">
       <div class="d-block text-center">
         <h3>Information about the clicked Restaurant!</h3>
@@ -21,7 +18,6 @@
         </table>
       </div>
     </b-modal>
-
     <div class="col">
       <b-row class="m-2">
         <b-col lg="4" class="pb-2">
@@ -86,9 +82,6 @@ export default {
     this.geolocate();
   },
   methods: {
-    // submit() {
-    //   this.showModal();
-    // },
     // The Navigator Ask me to get my current Position
     geolocate: function () {
       navigator.geolocation.getCurrentPosition((position) => {
@@ -106,8 +99,6 @@ export default {
     },
     getCenter(position) {
       this.center = position;
-      // console.log("clicked !");
-      // console.log(position);
       this.searchByCordinate(position);
       this.searchByName(this.searchedRestaurant.name);
       this.showModal();
@@ -129,11 +120,9 @@ export default {
     },
 
     searchByName(name) {
-      // console.log(name);
       this.searchedRestaurant = Restaurants.find(
         (resto) => resto.restaurant === name
       );
-      // alert(this.searchedRestaurant);
     },
   },
 };
