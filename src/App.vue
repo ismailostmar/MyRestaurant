@@ -8,16 +8,7 @@
         </b-col>
       </b-button>
 
-      <div class="container">
-        <!-- <span class="fa fa-search"></span> -->
-        <input
-          id="pac-input"
-          class="form-control form-control-sm w-75 mb-3"
-          type="text"
-          placeholder="Look for Restaurant ... "
-          v-model="search.restaurant"
-        />
-      </div>
+      <div class="container"></div>
 
       <!-- Sidebar  -->
       <b-sidebar
@@ -34,17 +25,7 @@
         <br />
         <div class="container">
           <div class="card" style="background-color: #212529">
-            <!-- <label for="owner"> Owner :</label><br />
-            <div class="col">
-              <input
-                id="owner"
-                class="form-control bg-dark text-light"
-                placeholder="The Owner ..."
-                v-model="search.owner"
-              /><br />
-            </div> -->
-
-            <!-- <label for="restaurant"> Restaurant :</label><br />
+            <label for="restaurant"> Restaurant :</label><br />
             <div class="col">
               <input
                 id="restaurant"
@@ -52,7 +33,7 @@
                 placeholder="The Restaurant ..."
                 v-model="search.restaurant"
               /><br />
-            </div> -->
+            </div>
             <br />
             <label for="town" class="m-1"> Town :</label><br />
             <div class="col">

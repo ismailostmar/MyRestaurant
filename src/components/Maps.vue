@@ -80,6 +80,7 @@ export default {
 
   mounted() {
     this.geolocate();
+    this.drawMarker();
   },
   methods: {
     // The Navigator Ask me to get my current Position
