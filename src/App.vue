@@ -46,16 +46,6 @@
                   id="town"
                 />
               </div>
-              <!-- <br />
-              <label for="type" class="m-1"> Type :</label><br />
-              <div class="col">
-                <input
-                  id="type"
-                  class="form-control bg-light text-black"
-                  placeholder="The Type ..."
-                  v-model="search.type"
-                /><br />
-              </div> -->
 
               <label for="type" class="m-1"> Type :</label><br />
               <div class="col">
@@ -67,15 +57,6 @@
                 />
                 <br />
               </div>
-              <!-- <div class="col">
-              <b-row>
-                <b-col lg="4" class="pb-2">
-                  <b-button class="forSelect" variant="success" size="sm"
-                    >Get Location</b-button
-                  >
-                </b-col>
-              </b-row>
-            </div> -->
             </div>
           </div>
         </b-sidebar>
