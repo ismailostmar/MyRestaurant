@@ -31,6 +31,7 @@
         </b-col>
       </b-row>
     </div> -->
+
     <div class="map-responsive">
       <GmapMap
         :center="center"

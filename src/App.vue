@@ -46,7 +46,7 @@
                   id="town"
                 />
               </div>
-              <br />
+              <!-- <br />
               <label for="type" class="m-1"> Type :</label><br />
               <div class="col">
                 <input
@@ -55,6 +55,17 @@
                   placeholder="The Type ..."
                   v-model="search.type"
                 /><br />
+              </div> -->
+
+              <label for="type" class="m-1"> Type :</label><br />
+              <div class="col">
+                <b-form-select
+                  class="forSelect p-1 m-1"
+                  :options="listTypeRestaurant"
+                  v-model="search.type"
+                  id="type"
+                />
+                <br />
               </div>
               <!-- <div class="col">
               <b-row>
@@ -110,6 +121,7 @@ export default {
       },
       listRestaurant: [],
       listVillesMAR: [],
+      listTypeRestaurant: [],
       mobile: "hide",
       reduce: false,
       expandWithDelay: true,
@@ -156,12 +168,30 @@ export default {
         });
       });
     },
+
+    getTypeRestaurant() {
+      axios.get("typeRestauant.json").then((response) => {
+        this.listTypeRestaurant.push({
+          value: "",
+          text: "",
+        });
+        // Map : boucler sur les elements de response
+        response.data.map((typ) => {
+          // Push : ajout dans la liste pour respecter la norme de select
+          this.listTypeRestaurant.push({
+            value: typ.resType,
+            text: typ.resType,
+          });
+        });
+      });
+    },
   },
 
-  // au moment de la creation du components
+  // au moment de la creation du components on cree la methode Created()
   created() {
     this.getRestaurantData();
     this.getListVilles();
+    this.getTypeRestaurant();
   },
 };
 </script>
