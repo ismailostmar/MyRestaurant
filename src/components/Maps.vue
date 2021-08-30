@@ -44,7 +44,6 @@
           v-for="(m, index) in markers"
           :position="m.position"
           :clickable="true"
-          :draggable="false"
           @click="getCenter(m.position)"
         />
       </GmapMap>

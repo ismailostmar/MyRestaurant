@@ -2,7 +2,7 @@
   <div id="app">
     <div>
       <!-- Button toggle  -->
-      <b-button v-b-toggle.sidebar-1 variant="light">
+<b-button v-b-toggle.sidebar-1 variant="light">
         <b-col md="1" class="mb-1">
           <b-icon icon="filter-left" animation="cylon" font-scale="1"></b-icon>
         </b-col>
@@ -114,7 +114,6 @@ export default {
     getListRestaurant() {
       return this.listRestaurant.filter((restaurant) => {
         return (
-          restaurant.owner.match(this.search.owner) &&
           restaurant.restaurant.match(this.search.restaurant) &&
           restaurant.town.match(this.search.town) &&
           restaurant.type.match(this.search.type)
@@ -179,8 +178,14 @@ export default {
 </script>
 
 <style>
+
+#app {
+  background-color: #F9FAFB;
+}
+
 @media screen and (max-height: 450px) {
   .sidebar {
+    background-color: #F8F9FA;
     padding-top: 15px;
   }
   .sidebar a {
