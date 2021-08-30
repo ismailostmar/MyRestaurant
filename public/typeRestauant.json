@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "resType": "Fast Food"
+    },
+    {
+        "id": 2,
+        "resType": "Café"
+    },
+    {
+        "id": 3,
+        "resType": "Lounge"
+    },
+    {
+        "id": 4,
+        "resType": "Chiken"
+    },
+    {
+        "id": 5,
+        "resType": "Restaurant"
+    },
+    {
+        "id": 6,
+        "resType": "Pizza"
+    },
+    {
+        "id": 7,
+        "resType": "Mediterranean"
+    },
+    {
+        "id": 8,
+        "resType": "Sushi"
+    },
+    {
+        "id": 9,
+        "resType": "Snack"
+    },
+    {
+        "id": 10,
+        "resType": "Fast Food"
+    },
+    {
+        "id": 11,
+        "resType": "Italien"
+    },
+    {
+        "id": 11,
+        "resType": "Tacos"
+    },
+    {
+        "id": 12,
+        "resType": "Grillardière"
+    },
+    {
+        "id": 13,
+        "resType": "Grillade Poisson"
+    },
+    {
+        "id": 14,
+        "resType": "Viande-Steak"
+    },
+    {
+        "id": 15,
+        "resType": "Small Restaurant"
+    }
+]

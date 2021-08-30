@@ -25,7 +25,7 @@
     "restaurant": "Coqueletto",
     "owner": "Aziz",
     "town": " Casablanca",
-    "type": "ChikenFood"
+    "type": "Chiken"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "restaurant": "Tazaj",
     "owner": "Abdul Rahman",
     "town": " Rabat",
-    "type": "Restaurants"
+    "type": "Restaurant"
   },
   {
     "id": 11,
@@ -123,7 +123,7 @@
     "restaurant": "One Way Steakhouse",
     "owner": "Rachid & Ali",
     "town": " Casablanca",
-    "type": "Viande/Steak"
+    "type": "Viande-Steak"
   },
   {
     "id": 20,
