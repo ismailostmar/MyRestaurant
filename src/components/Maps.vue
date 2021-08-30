@@ -21,17 +21,6 @@
         </b-col>
       </b-container>
     </b-modal>
-
-    <!-- <div class="col">
-      <b-row class="m-2">
-        <b-col lg="4" class="pb-2">
-          <b-button variant="outline-primary" @click="drawMarker"
-            >Get Location</b-button
-          >
-        </b-col>
-      </b-row>
-    </div> -->
-
     <div class="map-responsive">
       <GmapMap
         :center="center"
