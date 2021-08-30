@@ -137,8 +137,9 @@ export default {
       axios.get("villesMAR.json").then((response) => {
         this.listVillesMAR.push({
           value: "",
-          text: "",
+          text: "All Towns",
         });
+
         // Map : boucler sur les elements de response
         response.data.map((res) => {
           // Push : ajout dans la liste pour respecter la norme de select
@@ -154,7 +155,7 @@ export default {
       axios.get("typeRestauant.json").then((response) => {
         this.listTypeRestaurant.push({
           value: "",
-          text: "",
+          text: "All Types",
         });
         // Map : boucler sur les elements de response
         response.data.map((typ) => {
