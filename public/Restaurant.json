@@ -4,167 +4,191 @@
     "restaurant": "Shore Street London",
     "owner": "Ahmed",
     "town": " Casablanca",
-    "type": "Fast Food"
+    "type": "Fast Food",
+    "Rate" : 3
   },
   {
     "id": 2,
     "restaurant": "Casablanca Shore",
     "owner": "Hamza",
     "town": " Casablanca",
-    "type": "Café"
+    "type": "Café",
+    "Rate" : 5
   },
   {
     "id": 3,
     "restaurant": "Pasta Fresca",
     "owner": "Omar",
     "town": " Casablanca",
-    "type": "Lounge"
+    "type": "Lounge",
+    "Rate" : 3
   },
   {
     "id": 4,
     "restaurant": "Coqueletto",
     "owner": "Aziz",
     "town": " Casablanca",
-    "type": "Chiken"
+    "type": "Chiken",
+    "Rate" : 3
   },
   {
     "id": 5,
     "restaurant": "Boca Food Restaurants",
     "owner": "Bo-Ca",
     "town": " Casablanca",
-    "type": "Restaurant"
+    "type": "Restaurant",
+    "Rate" : 3
   },
   {
     "id": 6,
     "restaurant": "Pizza Hut",
     "owner": "Dan Carnay",
     "town": " Casablanca",
-    "type": "Pizza"
+    "type": "Pizza",
+    "Rate" : 3
   },
   {
     "id": 7,
     "restaurant": "Dar Naji",
     "owner": "El-Naji",
     "town": " Rabat",
-    "type": "Mediterranean"
+    "type": "Mediterranean",
+    "Rate" : 3
   },
   {
     "id": 8,
     "restaurant": "Yoka Sushi",
     "owner": "Yoka",
     "town": " Rabat",
-    "type": "Sushi"
+    "type": "Sushi",
+    "Rate" : 3
   },
   {
     "id": 9,
     "restaurant": "Chez Ouazzani",
     "owner": "El-Ouazzani",
     "town": " Rabat",
-    "type": "Snack"
+    "type": "Snack",
+    "Rate" : 3
   },
   {
     "id": 10,
     "restaurant": "Tazaj",
     "owner": "Abdul Rahman",
     "town": " Rabat",
-    "type": "Restaurant"
+    "type": "Restaurant",
+    "Rate" : 3
   },
   {
     "id": 11,
     "restaurant": "Pizza des Gourmets",
     "owner": "Michelle",
     "town": " Rabat",
-    "type": "Pizza"
+    "type": "Pizza",
+    "Rate" : 3
   },
   {
     "id": 12,
     "restaurant": "Ligui Sidi Maarouf",
     "owner": "Ligui",
     "town": " Casablanca",
-    "type": "Italien"
+    "type": "Italien",
+    "Rate" : 3
   },
   {
     "id": 13,
     "restaurant": "Pasta d'Oro",
     "owner": "Inconnu",
     "town": " Casablanca",
-    "type": "Italien"
+    "type": "Italien",
+    "Rate" : 3
   },
   {
     "id": 15,
     "restaurant": "Olea",
     "owner": "Olea",
     "town": " Casablanca",
-    "type": "Italien"
+    "type": "Italien",
+    "Rate" : 3
   },
   {
     "id": 16,
     "restaurant": "Ipopito",
     "owner": "Ipopito",
     "town": " Casablanca",
-    "type": "Tacos"
+    "type": "Tacos",
+    "Rate" : 3
   },
   {
     "id": 17,
     "restaurant": "Machaway Restaurant",
     "owner": "Ben-Saoud",
     "town": " Casablanca",
-    "type": "Grillardière"
+    "type": "Grillardière",
+    "Rate" : 3
   },
   {
     "id": 18,
     "restaurant": "Ô Machwi",
     "owner": "Khalifa",
     "town": " Casablanca",
-    "type": "Grillade Poisson"
+    "type": "Grillade Poisson",
+    "Rate" : 3
   },
   {
     "id": 19,
     "restaurant": "One Way Steakhouse",
     "owner": "Rachid & Ali",
     "town": " Casablanca",
-    "type": "Viande-Steak"
+    "type": "Viande-Steak",
+    "Rate" : 3
   },
   {
     "id": 20,
     "restaurant": "Chicken Light",
     "owner": "Ismail",
     "town": " Casablanca",
-    "type": "Chiken"
+    "type": "Chiken",
+    "Rate" : 3
   },
   {
     "id": 21,
     "restaurant": "La Grillardière Sidi Maarouf",
     "owner": "#########",
     "town": " Casablanca",
-    "type": "Grillade"
+    "type": "Grillade",
+    "Rate" : 3
   },
   {
     "id": 22,
     "restaurant": "Khalifa fresh fishe",
     "owner": "Khalifa",
     "town": " Casablanca",
-    "type": "Grillade Poisson"
+    "type": "Grillade Poisson",
+    "Rate" : 3
   },
   {
     "id": 23,
     "restaurant": "Pizza Corner",
     "owner": "#########",
     "town": " Casablanca",
-    "type": "Pizzeria"
+    "type": "Pizzeria",
+    "Rate" : 3
   },
   {
     "id": 24,
     "restaurant": "Le Miam's",
     "owner": "Miams",
     "town": " Casablanca",
-    "type": "Fast Food"
+    "type": "Fast Food",
+    "Rate" : 3
   },
   {
     "id": 25,
     "restaurant": "Brother's food",
     "owner": "Akhawayn",
     "town": " Casablanca",
-    "type": "Small Restaurant"
+    "type": "Small Restaurant",
+    "Rate" : 3
   }
 ]

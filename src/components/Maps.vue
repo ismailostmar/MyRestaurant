@@ -1,6 +1,6 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" title="Restaurant details" hide-backdrop>
+    <b-modal ref="my-modal" title="Restaurant details" slideRight hide-backdrop>
       <h3>Information about the clicked Restaurant!</h3>
       <b-container >
         <b-col cols="7">
@@ -13,11 +13,15 @@
         <b-col cols="7">
           Town :
           {{ this.searchedRestaurant.town }}
-        </b-col>
+        </b-col> 
 
         <b-col cols="7">
           Type :
           {{ this.searchedRestaurant.type }}
+        </b-col>
+        <b-col cols="7">
+          Top Rating :
+          <b-form-rating v-model="value" variant="warning" class="form-control-none"></b-form-rating>
         </b-col>
       </b-container>
     </b-modal>

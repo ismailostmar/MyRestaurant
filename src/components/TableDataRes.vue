@@ -19,7 +19,7 @@
   <tbody v-for="restau in listRestaurant">
     <tr>
       <th scope="row">{{restau.id}}</th>
-      <td>{{restau.restaurant}}</td>
+      <td> <a href="#"> {{restau.restaurant}} </a></td>
       <td>{{restau.town}}</td>
       <td>{{restau.type}}</td>
       <td>{{restau.owner}}</td>     
@@ -36,6 +36,7 @@
 //Javascript Object Notation
 export default {
   name: "TableDataRes",
-  props: ["listRestaurant"],
+  props: ["listRestaurant",],
+
 };
 </script>
