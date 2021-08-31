@@ -1,6 +1,6 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" centred title="Restaurant details" hide-backdrop>
+    <b-modal ref="my-modal" title="Restaurant details" hide-backdrop>
       <h3>Information about the clicked Restaurant!</h3>
       <b-container >
         <b-col cols="7">
