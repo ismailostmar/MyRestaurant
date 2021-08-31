@@ -1,8 +1,8 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" centred title="Restaurant details">
+    <b-modal ref="my-modal" centred title="Restaurant details" hide-backdrop>
       <h3>Information about the clicked Restaurant!</h3>
-      <b-container fluid>
+      <b-container >
         <b-col cols="7">
           Restaurant : {{ this.searchedRestaurant.restaurant }}</b-col
         >
@@ -24,7 +24,7 @@
     <div class="map-responsive">
       <GmapMap
         :center="center"
-        :zoom="7"
+        :zoom="10"
         map-type-id="terrain"
         style="width: 1270px; height: 400px"
         frameborder="0"
