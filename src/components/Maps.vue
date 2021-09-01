@@ -1,6 +1,6 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" title="Restaurant details" slideRight hide-backdrop>
+    <b-modal ref="my-modal" title="Restaurant details" centered hide-backdrop>
       <h3>Information about the clicked Restaurant!</h3>
       <b-container >
         <b-col cols="7">
@@ -22,6 +22,7 @@
         <b-col cols="7">
           Top Rating :
           <b-form-rating v-model="value" variant="warning" class="form-control-none"></b-form-rating>
+          <p class="mt-2">Value: {{ value }}</p>
         </b-col>
       </b-container>
     </b-modal>
@@ -63,6 +64,7 @@ export default {
   name: "Maps",
   data() {
     return {
+      value: null,
       //counter: 0,
       markers: [],
       center: { lat: 45.508, lng: -73.587 },
