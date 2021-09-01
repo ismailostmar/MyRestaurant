@@ -175,7 +175,177 @@ const tab = [{
             lat: 33.52154,
             lng: -7.64494
         }
+    },
+
+    {
+        name: "Sur le Toit",
+        position: {
+            lat: 33.52049,
+            lng: -7.64892
+        }
+    },
+
+    {
+        name: "Gastro Food",
+        position: {
+            lat: 33.52049,
+            lng: -7.64892
+        }
+    },
+
+    {
+        name: "California Food",
+        position: {
+            lat: 33.54423,
+            lng: -7.61572
+        }
+    },
+
+    {
+        name: "LES 7 MERS",
+        position: {
+            lat: 33.55522, 
+            lng: -7.62381  
+        }
+    },
+
+    {
+        name: "A la Bazzene",
+        position: {
+            lat: 33.56567, 
+            lng: -7.65346 
+        }
+    },
+
+    {
+        name: "THE KITCHEN",
+        position: {
+            lat: 33.57447, 
+            lng: -7.64324 
+        }
+    },  
+
+    {
+        name: "La Closerie",
+        position: {
+            lat: 33.58308,
+            lng: -7.64137
+        }
+    },
+
+    {
+        name: "Blend Gourmet Burger",
+        position: {
+            lat: 33.58863, 
+            lng: -7.63188
+        }
+    },
+
+    {
+        name: "Don Camillo",
+        position: {
+            lat: 33.58748,  
+            lng: -7.61285
+        }
+    },
+
+    {
+        name: "Organic Kitchen",
+        position: {
+            lat: 33.59050,  
+            lng: -7.63813
+        }
+    },
+
+    {
+        name: "Restaurant Al-Mounia",
+        position: {
+            lat: 33.59092,
+            lng: -7.61647
+
+        }
+    },
+
+    {
+        name: "Le Cuistot Traditionnel",
+        position: {
+            lat: 33.59276,
+            lng: -7.62139
+
+        }
+    },
+    
+    {
+        name: "Cafe M",
+        position: {
+            lat: 33.59534,
+            lng: -7.61872
+
+        }
+    },
+
+    {
+        name: "La Casa Pasta",
+        position: {
+            lat: 33.58063,
+            lng: -7.62378
+
+        }
+    },
+
+    {
+        name: "MareHaba",
+        position: {
+            lat: 33.58061,
+            lng: -7.62357
+
+        }
+    },
+
+    {
+        name: "Le Cabestan",
+        position: {
+            lat: 33.60818,
+            lng:  -7.65547
+
+        }
+    },
+
+    {
+        name: "Lily's",
+        position: {
+            lat: 33.60788,
+            lng: -7.65553
+
+        }
     }
 ]
 
-module.exports = tab;
+module.exports = tab;   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

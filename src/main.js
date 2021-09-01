@@ -13,7 +13,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import "leaflet/dist/leaflet.css";
 import "leaflet-geosearch/dist/geosearch.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
-import "html2canvas";
+import Popover from 'vue-js-popover'
+
+Vue.use(Popover)
 
 import * as VueGoogleMaps from 'vue2-google-maps';
 

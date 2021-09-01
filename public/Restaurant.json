@@ -190,5 +190,174 @@
     "town": " Casablanca",
     "type": "Small Restaurant",
     "Rate" : 3
+  },
+  {
+    "id": 26,
+    "restaurant": "Sur le Toit",
+    "owner": "Bruno demoun",
+    "town": " Casablanca",
+    "type": "Restaurant",
+    "Rate" : 4
+  },
+
+  {
+    "id": 27,
+    "restaurant": "California Food",
+    "owner": "Jackson",
+    "town": " Casablanca",
+    "type": "Coffee",
+    "Rate" : 4
+  },
+
+  {
+    "id": 26,
+    "restaurant": "LES 7 MERS",
+    "owner": "Leila",
+    "town": " Casablanca",
+    "type": "TAPAS & BAR",
+    "Rate" : 4
+  },
+
+  {
+    "id": 27,
+    "restaurant": "A la Bazzene",
+    "owner": "Francois",
+    "town": " Casablanca",
+    "type": "French",
+    "Rate" : 4
+  },
+
+  {
+    "id": 28,
+    "restaurant": "THE KITCHEN",
+    "owner": "!!!!!!!!!",
+    "town": " Casablanca",
+    "type": "Italian Restaurant",
+    "Rate" : 4
+  },
+
+  {
+    "id": 29,
+    "restaurant": "La Closerie",
+    "owner": "Olivier",
+    "town": " Casablanca",
+    "type": "American",
+    "Rate" : 4
+  },
+
+  {
+    "id": 30,
+    "restaurant": "Blend Gourmet Burger",
+    "owner": "Tarik",
+    "town": " Casablanca",
+    "type": "Burger",
+    "Rate" : 2
+  },
+
+  {
+    "id": 31,
+    "restaurant": "Don Camillo",
+    "owner": "Camillo",
+    "town": " Casablanca",
+    "type": "Spanian Restaurant",
+    "Rate" : 4
+  },
+
+  {
+    "id": 32,
+    "restaurant": "Organic Kitchen",
+    "owner": "Nasrine",
+    "town": " Casablanca",
+    "type": "Biological",
+    "Rate" : 4
+  },
+
+  {
+    "id": 33,
+    "restaurant": "Restaurant Al-Mounia",
+    "owner": "Mounia",
+    "town": " Casablanca",
+    "type": "Moroccan",
+    "Rate" : 4
+  },
+
+  {
+    "id": 34,
+    "restaurant": "Le Cuistot Traditionnel",
+    "owner": "KAMAL",
+    "town": " Casablanca",
+    "type": "Restaurant Moroccan",
+    "Rate" : 4
+  },
+
+  {
+    "id": 35,
+    "restaurant": "Cafe M",
+    "owner": "Mr.M",
+    "town": " Casablanca",
+    "type": "Coffee",
+    "Rate" : 4
+  },
+
+  {
+    "id": 36,
+    "restaurant": "La Bavaroise",
+    "owner": "SAID",
+    "town": " Casablanca",
+    "type": "French Restaurant",
+    "Rate" : 4
+  },
+
+  {
+    "id": 37,
+    "restaurant": "La Casa Pasta",
+    "owner": "PSTA",
+    "town": " Casablanca",
+    "type": "Sandwish",
+    "Rate" : 4
+  },
+
+  {
+    "id": 38,
+    "restaurant": "MareHaba",
+    "owner": "!!!!!!!!!!",
+    "town": " Casablanca",
+    "type": "Moroccan Restaurant",
+    "Rate" : 4
+  },
+
+  {
+    "id": 39,
+    "restaurant": "Le Cabestan",
+    "owner": "Nicolas Perez",
+    "town": " Casablanca",
+    "type": "Lounge",
+    "Rate" : 4
+  },
+
+  {
+    "id": 40,
+    "restaurant": "Lily's",
+    "owner": "Fabien Caboy",
+    "town": " Casablanca",
+    "type": "Asian Restaurant",
+    "Rate" : 4
   }
 ]
+
+
+
+
+
+  
+
+
+
+
+ 
+
+
+
+
+
+
