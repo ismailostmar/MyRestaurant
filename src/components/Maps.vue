@@ -1,31 +1,35 @@
 <template>
   <div id="map">
-    <b-modal ref="my-modal" title="Restaurant details" centered hide-backdrop>
-      <h3>Information about the clicked Restaurant!</h3>
-      <b-container >
-        <b-col cols="7">
-          Restaurant : {{ this.searchedRestaurant.restaurant }}</b-col
-        >
-        <b-col cols="7">
-          Owner :
-          {{ this.searchedRestaurant.owner }}
-        </b-col>
-        <b-col cols="7">
-          Town :
-          {{ this.searchedRestaurant.town }}
-        </b-col> 
+    <div ref="madiv" class="maclassdiv">
+      <b-modal ref="mymodal" title="Restaurant details" centered hide-backdrop>
+        <h3>Information about the clicked Restaurant!</h3>
+        <b-container>
+          <b-col cols="7">
+            Restaurant : {{ this.searchedRestaurant.restaurant }}</b-col
+          >
+          <b-col cols="7">
+            Owner :
+            {{ this.searchedRestaurant.owner }}
+          </b-col>
+          <b-col cols="7">
+            Town :
+            {{ this.searchedRestaurant.town }}
+          </b-col>
 
-        <b-col cols="7">
-          Type :
-          {{ this.searchedRestaurant.type }}
-        </b-col>
-        <b-col cols="7">
+          <b-col cols="7">
+            Type :
+            {{ this.searchedRestaurant.type }}
+          </b-col>
+
+          <button @click="printThis">Print</button>
+          <!-- <b-col cols="7">
           Top Rating :
           <b-form-rating v-model="value" variant="warning" class="form-control-none"></b-form-rating>
           <p class="mt-2">Value: {{ value }}</p>
-        </b-col>
-      </b-container>
-    </b-modal>
+        </b-col> -->
+        </b-container>
+      </b-modal>
+    </div>
     <div class="map-responsive">
       <GmapMap
         :center="center"
@@ -59,12 +63,13 @@
 <script>
 import tab from "../../public/coordinates.js";
 import Restaurants from "../../public/Restaurant.json";
+import html2canvas from "html2canvas";
 
 export default {
   name: "Maps",
   data() {
     return {
-      value: null,
+      // value: null,
       //counter: 0,
       markers: [],
       center: { lat: 45.508, lng: -73.587 },
@@ -77,8 +82,31 @@ export default {
     this.drawMarker();
   },
   methods: {
+    async printThis() {
+      console.log("printing..");
+      const el = this.$refs.madiv;
+
+      const options = {
+        type: "dataURL",
+      };
+      const printCanvas = await html2canvas(el, options);
+
+      const link = document.createElement("div");
+      link.setAttribute("download", "download.png");
+      link.setAttribute(
+        "maclassdiv",
+        printCanvas
+          .toDataURL("image/png")
+          .replace("image/png", "image/octet-stream")
+      );
+      link.click();
+
+      console.log("done");
+
+    },
+
     // The Navigator Ask me to get my current Position
-    geolocate: function () {
+    geolocate: function() {
       navigator.geolocation.getCurrentPosition((position) => {
         this.center = {
           lat: position.coords.latitude,
@@ -97,10 +125,10 @@ export default {
     },
 
     showModal() {
-      this.$refs["my-modal"].show();
+      this.$refs["mymodal"].show();
     },
     hideModal() {
-      this.$refs["my-modal"].hide();
+      this.$refs["mymodal"].hide();
     },
 
     searchByCordinate(position) {

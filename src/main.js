@@ -13,6 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import "leaflet/dist/leaflet.css";
 import "leaflet-geosearch/dist/geosearch.css";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
+import "html2canvas";
 
 import * as VueGoogleMaps from 'vue2-google-maps';
 
@@ -29,6 +30,7 @@ Vue.use(VueGoogleMaps, {
     // v: '3.26',
   },
 })
+
 
 Vue.use(VuejsDatatableFactory);
 
