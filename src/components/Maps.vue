@@ -1,7 +1,6 @@
 <template>
   <div id="map">
-    <div ref="madiv" class="maclassdiv">
-      <b-modal ref="mymodal" title="Restaurant details" centered hide-backdrop>
+      <b-modal ref="mymodal" title="Restaurant details" backdrop>
         <h3>Information about the clicked Restaurant!</h3>
         <b-container>
           <b-col cols="7">
@@ -21,15 +20,13 @@
             {{ this.searchedRestaurant.type }}
           </b-col>
 
-          <button @click="printThis">Print</button>
-          <!-- <b-col cols="7">
+          <b-col cols="7">
           Top Rating :
-          <b-form-rating v-model="value" variant="warning" class="form-control-none"></b-form-rating>
+          <b-form-rating v-model="value" variant="primary" style="width: 60%; "></b-form-rating>
           <p class="mt-2">Value: {{ value }}</p>
-        </b-col> -->
+        </b-col>
         </b-container>
       </b-modal>
-    </div>
     <div class="map-responsive">
       <GmapMap
         :center="center"
@@ -63,14 +60,12 @@
 <script>
 import tab from "../../public/coordinates.js";
 import Restaurants from "../../public/Restaurant.json";
-import html2canvas from "html2canvas";
 
 export default {
   name: "Maps",
   data() {
     return {
-      // value: null,
-      //counter: 0,
+      value: 0,
       markers: [],
       center: { lat: 45.508, lng: -73.587 },
       searchedRestaurant: {},
@@ -82,28 +77,6 @@ export default {
     this.drawMarker();
   },
   methods: {
-    async printThis() {
-      console.log("printing..");
-      const el = this.$refs.madiv;
-
-      const options = {
-        type: "dataURL",
-      };
-      const printCanvas = await html2canvas(el, options);
-
-      const link = document.createElement("div");
-      link.setAttribute("download", "download.png");
-      link.setAttribute(
-        "maclassdiv",
-        printCanvas
-          .toDataURL("image/png")
-          .replace("image/png", "image/octet-stream")
-      );
-      link.click();
-
-      console.log("done");
-
-    },
 
     // The Navigator Ask me to get my current Position
     geolocate: function() {
