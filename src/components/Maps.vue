@@ -19,12 +19,6 @@
             Type :
             {{ this.searchedRestaurant.type }}
           </b-col>
-
-          <b-col cols="7">
-          Top Rating :
-          <b-form-rating v-model="value" variant="primary" style="width: 60%; "></b-form-rating>
-          <p class="mt-2">Value: {{ value }}</p>
-        </b-col>
         </b-container>
       </b-modal>
     <div class="map-responsive">
@@ -51,7 +45,9 @@
           :position="m.position"
           :clickable="true"
           @click="getCenter(m.position)"
+          :zoomOnClick="true"
         />
+
       </GmapMap>
     </div>
   </div>
@@ -77,6 +73,10 @@ export default {
     this.drawMarker();
   },
   methods: {
+
+    eventListner(){
+
+    },
 
     // The Navigator Ask me to get my current Position
     geolocate: function() {

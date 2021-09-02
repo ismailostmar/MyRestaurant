@@ -1,7 +1,7 @@
 <template lang="fr">
     <div class="table-responsive">
         <!--Table-->
-<table class="table table-hover table-borderless">
+<table class="table table-hover">
 
   <!--Table head-->
   <thead class="table-dark">
