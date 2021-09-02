@@ -1,12 +1,12 @@
 <template lang="fr">
     <div class="table-responsive">
         <!--Table-->
-<table class="table table-hover">
+<table class="table table-striped table-borderless table-sm">
 
   <!--Table head-->
-  <thead class="table-dark">
+  <thead class="table-info">
     <tr>
-      <th>#</th>
+      <th></th>
       <th>Restaurant</th>
       <th>Town</th>
       <th>Type</th>
@@ -36,7 +36,6 @@
 //Javascript Object Notation
 export default {
   name: "TableDataRes",
-  props: ["listRestaurant",],
-
+  props: ["listRestaurant",]
 };
 </script>

@@ -24,7 +24,7 @@
     <div class="map-responsive">
       <GmapMap
         :center="center"
-        :zoom="10"
+        :zoom="2"
         map-type-id="terrain"
         style="width: 1270px; height: 400px"
         frameborder="0"
