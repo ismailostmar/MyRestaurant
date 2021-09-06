@@ -36,7 +36,7 @@
           scrollwheel: true,
           rotateControl: true,
           fullscreenControl: true,
-          disableDefaultUi: true,
+          disableDefaultUi: false,
         }"
       >
         <GmapMarker
