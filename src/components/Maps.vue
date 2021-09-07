@@ -4,20 +4,20 @@
         <h3>Information about the clicked Restaurant!</h3>
         <b-container>
           <b-col cols="7">
-            Restaurant : {{ this.searchedRestaurant.restaurant }}</b-col
+            Restaurant : {{ searchedRestaurant.restaurant }}</b-col
           >
           <b-col cols="7">
             Owner :
-            {{ this.searchedRestaurant.owner }}
+            {{ searchedRestaurant.owner }}
           </b-col>
           <b-col cols="7">
             Town :
-            {{ this.searchedRestaurant.town }}
+            {{ searchedRestaurant.town }}
           </b-col>
 
           <b-col cols="7">
             Type :
-            {{ this.searchedRestaurant.type }}
+            {{ searchedRestaurant.type }}
           </b-col>
         </b-container>
       </b-modal>
